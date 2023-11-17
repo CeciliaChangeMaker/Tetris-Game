@@ -6,6 +6,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: demo 
+  name: demo
 spec:
   replicas: 5 # You can adjust the number of replicas as needed
   selector:
