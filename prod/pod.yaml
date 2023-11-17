@@ -5,13 +5,13 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    run: demo 
+    run: demo
   name: demo
 spec:
-  replicas: 5 # You can adjust the number of replicas as needed
+  replicas: 5
   selector:
     matchLabels:
-      app: demo 
+      app: demo
   strategy: {}
   template:
     metadata:
@@ -20,8 +20,7 @@ spec:
         app: demo
     spec:
       containers:
-        - image: mylandmark/spring-boot-mongo:latest # Replace with the actual image tag
-          name: kubernetes
-          resources: {}
-    status: {}
-          
+      - image: mylandmark/spring-boot-mongo:latest  # Replace with the actual image tag
+        name: kubernetes
+        resources: {}
+status: {}
